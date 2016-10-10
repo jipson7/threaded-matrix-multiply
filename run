@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gcc -lpthread -o matrix-multiply.out matrix-multiply.c
