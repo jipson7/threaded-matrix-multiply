@@ -3,6 +3,6 @@
 Threaded matrix multiplication using: 
 * C and Pthreads
 * Java
-* Rust
+* Go
 
 
