@@ -25,9 +25,7 @@ class MatrixMultiply implements Runnable {
     public static void main(String[] args) {
         int thread_count = 0;
 
-        //Loop through rows
         for (int i = 0; i < M; i++) {
-            //Loop through columns
             for (int j = 0; j < N; j++) {
                 workers[thread_count] = new Thread(new MatrixMultiply(i, j));
                 workers[thread_count].start();
@@ -61,6 +59,7 @@ class MatrixMultiply implements Runnable {
         this.j = j;
     }
 
+    //Function called by each thread
     @Override
     public void run() {
 

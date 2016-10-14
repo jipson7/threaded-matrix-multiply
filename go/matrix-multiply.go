@@ -35,6 +35,7 @@ func main() {
 
 }
 
+//Function called by each thread/routine
 func runner(i int, j int, wg *sync.WaitGroup) {
 
 	sum := 0

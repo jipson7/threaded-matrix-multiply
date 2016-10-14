@@ -20,6 +20,7 @@ struct v {
     int j; //column
 };
 
+//Function called by each thread
 void *runner(void *param) {
 	struct v *data = param; 
 	int sum = 0; 
@@ -40,9 +41,7 @@ int main(int argc, char *argv[]) {
 
     int thread_count = 0;
 
-    //Loop through rows
     for (int i = 0; i < M; i++) {
-        //Loop through columns
         for (int j = 0; j < N; j++) {
 
             // Create data structure to pass to thread
